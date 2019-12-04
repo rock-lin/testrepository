@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="cn.enjoy.test.TestMessageProvider" time="3.711" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\Program Files\Java\jdk1.8.0_101\jre\bin"/>
+    <property name="java.vm.version" value="25.101-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\workspacemars\microcloud"/>
+    <property name="java.runtime.version" value="1.8.0_101-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="D:\Program Files\Java\jdk1.8.0_101\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\workspacemars\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5723158169605847621.tmp"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\Program Files\Java\jdk1.8.0_101\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/Program Files/Java/jdk1.8.0_101/jre/bin/server;D:/Program Files/Java/jdk1.8.0_101/jre/bin;D:/Program Files/Java/jdk1.8.0_101/jre/lib/amd64;D:\Program Files\Java\jdk1.8.0_101\jre\bin;D:\Program Files\Java\jdk1.8.0_101\bin;D:\newhope\software\mysql-5.6.26-winx64\bin;D:\newhope\apache-maven-3.6.1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;d:\Program Files\OpenVPN\bin;D:\newhope\erl9.3\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\newhope\software\eclipsemars\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="java.class.path" value="D:\newhope\apache-maven-3.0.5\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\Program Files\Java\jdk1.8.0_101\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s D:\newhope\apache-maven-3.6.1\conf\settings.xml install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_101"/>
+    <property name="java.ext.dirs" value="D:\Program Files\Java\jdk1.8.0_101\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;D:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;D:\Program Files\Java\jdk1.8.0_101\jre\lib\sunrsasign.jar;D:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;D:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;D:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;D:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;D:\Program Files\Java\jdk1.8.0_101\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\newhope\apache-maven-3.0.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="cn.enjoy.test.TestMessageProvider" name="testSend" time="0.029">
+    <error message="Error creating bean with name &apos;cn.enjoy.test.TestMessageProvider&apos;: Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;cn.enjoy.service.IMessageProvider&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}" type="org.springframework.beans.factory.BeanCreationException">org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;cn.enjoy.test.TestMessageProvider&apos;: Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;cn.enjoy.service.IMessageProvider&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:393)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;cn.enjoy.service.IMessageProvider&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1506)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:507)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 33 more
+</error>
+    <system-out>11:43:17.576 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class cn.enjoy.test.TestMessageProvider]
+11:43:17.584 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+11:43:17.592 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+11:43:17.609 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [cn.enjoy.test.TestMessageProvider] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+11:43:17.621 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [cn.enjoy.test.TestMessageProvider], using SpringBootContextLoader
+11:43:17.625 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [cn.enjoy.test.TestMessageProvider]: class path resource [cn/enjoy/test/TestMessageProvider-context.xml] does not exist
+11:43:17.625 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [cn.enjoy.test.TestMessageProvider]: class path resource [cn/enjoy/test/TestMessageProviderContext.groovy] does not exist
+11:43:17.626 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [cn.enjoy.test.TestMessageProvider]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:43:17.673 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [cn.enjoy.test.TestMessageProvider]
+11:43:17.818 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [cn.enjoy.test.TestMessageProvider]: using defaults.
+11:43:17.818 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+11:43:17.826 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+11:43:17.833 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1aa7ecca, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@59309333, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5876a9af, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7ec7ffd3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5b239d7d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6572421, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6b81ce95, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2a798d51, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6d763516, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@52bf72b5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@37afeb11]
+11:43:17.834 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.enjoy.test.TestMessageProvider]
+11:43:17.834 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.enjoy.test.TestMessageProvider]
+11:43:17.835 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.enjoy.test.TestMessageProvider]
+11:43:17.835 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.enjoy.test.TestMessageProvider]
+11:43:17.839 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@158d2680 testClass = TestMessageProvider, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@77847718 testClass = TestMessageProvider, locations = &apos;{}&apos;, classes = &apos;{class cn.enjoy.StreamProviderApp, class cn.enjoy.StreamProviderApp}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}&apos;, contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@25bbf683, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@544a2ea6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@24a35978, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@35a50a4c], contextLoader = &apos;org.springframework.boot.test.context.SpringBootContextLoader&apos;, parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+11:43:17.839 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.enjoy.test.TestMessageProvider]
+11:43:17.839 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.enjoy.test.TestMessageProvider]
+11:43:17.842 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@158d2680 testClass = TestMessageProvider, testInstance = cn.enjoy.test.TestMessageProvider@1bd4fdd, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@77847718 testClass = TestMessageProvider, locations = &apos;{}&apos;, classes = &apos;{class cn.enjoy.StreamProviderApp, class cn.enjoy.StreamProviderApp}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}&apos;, contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@25bbf683, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@544a2ea6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@24a35978, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@35a50a4c], contextLoader = &apos;org.springframework.boot.test.context.SpringBootContextLoader&apos;, parent = [null]], attributes = map[[empty]]]].
+11:43:17.863 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource &apos;systemProperties&apos; with lowest search precedence
+11:43:17.863 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource &apos;systemEnvironment&apos; with lowest search precedence
+11:43:17.863 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [MapPropertySource@887750041 {name=&apos;systemProperties&apos;, properties={java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=D:\Program Files\Java\jdk1.8.0_101\jre\bin, java.vm.version=25.101-b13, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=CN, user.script=, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=D:\workspacemars\microcloud\microcloud-stream-provider, java.runtime.version=1.8.0_101-b13, basedir=D:\workspacemars\microcloud\microcloud-stream-provider, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=D:\Program Files\Java\jdk1.8.0_101\jre\lib\endorsed, os.arch=amd64, surefire.real.class.path=D:\workspacemars\microcloud\microcloud-stream-provider\target\surefire\surefirebooter2695987348872540877.jar, java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 10, sun.jnu.encoding=GBK, java.library.path=D:\Program Files\Java\jdk1.8.0_101\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/Program Files/Java/jdk1.8.0_101/jre/bin/server;D:/Program Files/Java/jdk1.8.0_101/jre/bin;D:/Program Files/Java/jdk1.8.0_101/jre/lib/amd64;D:\Program Files\Java\jdk1.8.0_101\jre\bin;D:\Program Files\Java\jdk1.8.0_101\bin;D:\newhope\software\mysql-5.6.26-winx64\bin;D:\newhope\apache-maven-3.6.1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;d:\Program Files\OpenVPN\bin;D:\newhope\erl9.3\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\newhope\software\eclipsemars\eclipse;;., surefire.test.class.path=D:\workspacemars\microcloud\microcloud-stream-provider\target\test-classes;D:\workspacemars\microcloud\microcloud-stream-provider\target\classes;D:\newhope\maven\repository\org\springframework\cloud\spring-cloud-stream\2.0.0.RELEASE\spring-cloud-stream-2.0.0.RELEASE.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-starter-validation\2.0.7.RELEASE\spring-boot-starter-validation-2.0.7.RELEASE.jar;D:\newhope\maven\repository\org\apache\tomcat\embed\tomcat-embed-el\8.5.35\tomcat-embed-el-8.5.35.jar;D:\newhope\maven\repository\org\hibernate\validator\hibernate-validator\6.0.13.Final\hibernate-validator-6.0.13.Final.jar;D:\newhope\maven\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;D:\newhope\maven\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;D:\newhope\maven\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;D:\newhope\maven\repository\org\springframework\spring-messaging\5.0.11.RELEASE\spring-messaging-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-beans\5.0.11.RELEASE\spring-beans-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\integration\spring-integration-core\5.0.10.RELEASE\spring-integration-core-5.0.10.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-aop\5.0.11.RELEASE\spring-aop-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-context\5.0.11.RELEASE\spring-context-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-expression\5.0.11.RELEASE\spring-expression-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-tx\5.0.11.RELEASE\spring-tx-5.0.11.RELEASE.jar;D:\newhope\maven\repository\io\projectreactor\reactor-core\3.1.12.RELEASE\reactor-core-3.1.12.RELEASE.jar;D:\newhope\maven\repository\org\reactivestreams\reactive-streams\1.0.2\reactive-streams-1.0.2.jar;D:\newhope\maven\repository\org\springframework\integration\spring-integration-jmx\5.0.10.RELEASE\spring-integration-jmx-5.0.10.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-tuple\1.0.0.RELEASE\spring-tuple-1.0.0.RELEASE.jar;D:\newhope\maven\repository\com\esotericsoftware\kryo-shaded\3.0.3\kryo-shaded-3.0.3.jar;D:\newhope\maven\repository\com\esotericsoftware\minlog\1.3.0\minlog-1.3.0.jar;D:\newhope\maven\repository\com\fasterxml\jackson\core\jackson-databind\2.9.7\jackson-databind-2.9.7.jar;D:\newhope\maven\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;D:\newhope\maven\repository\com\fasterxml\jackson\core\jackson-core\2.9.7\jackson-core-2.9.7.jar;D:\newhope\maven\repository\org\springframework\integration\spring-integration-tuple\1.0.0.RELEASE\spring-integration-tuple-1.0.0.RELEASE.jar;D:\newhope\maven\repository\org\springframework\retry\spring-retry\1.2.2.RELEASE\spring-retry-1.2.2.RELEASE.jar;D:\newhope\maven\repository\org\springframework\cloud\spring-cloud-starter-stream-rabbit\2.0.0.RELEASE\spring-cloud-starter-stream-rabbit-2.0.0.RELEASE.jar;D:\newhope\maven\repository\org\springframework\cloud\spring-cloud-stream-binder-rabbit\2.0.0.RELEASE\spring-cloud-stream-binder-rabbit-2.0.0.RELEASE.jar;D:\newhope\maven\repository\org\springframework\cloud\spring-cloud-stream-binder-rabbit-core\2.0.0.RELEASE\spring-cloud-stream-binder-rabbit-core-2.0.0.RELEASE.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-starter-amqp\2.0.7.RELEASE\spring-boot-starter-amqp-2.0.7.RELEASE.jar;D:\newhope\maven\repository\org\springframework\amqp\spring-rabbit\2.0.10.RELEASE\spring-rabbit-2.0.10.RELEASE.jar;D:\newhope\maven\repository\org\springframework\amqp\spring-amqp\2.0.10.RELEASE\spring-amqp-2.0.10.RELEASE.jar;D:\newhope\maven\repository\com\rabbitmq\amqp-client\5.4.3\amqp-client-5.4.3.jar;D:\newhope\maven\repository\org\springframework\spring-web\5.0.11.RELEASE\spring-web-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\integration\spring-integration-amqp\5.0.10.RELEASE\spring-integration-amqp-5.0.10.RELEASE.jar;D:\workspacemars\microcloud\microcloud-api\target\microcloud.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-starter-test\2.0.7.RELEASE\spring-boot-starter-test-2.0.7.RELEASE.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-starter\2.0.7.RELEASE\spring-boot-starter-2.0.7.RELEASE.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot\2.0.7.RELEASE\spring-boot-2.0.7.RELEASE.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.7.RELEASE\spring-boot-autoconfigure-2.0.7.RELEASE.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-starter-logging\2.0.7.RELEASE\spring-boot-starter-logging-2.0.7.RELEASE.jar;D:\newhope\maven\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;D:\newhope\maven\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;D:\newhope\maven\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;D:\newhope\maven\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;D:\newhope\maven\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;D:\newhope\maven\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;D:\newhope\maven\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-test\2.0.7.RELEASE\spring-boot-test-2.0.7.RELEASE.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.0.7.RELEASE\spring-boot-test-autoconfigure-2.0.7.RELEASE.jar;D:\newhope\maven\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;D:\newhope\maven\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;D:\newhope\maven\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;D:\newhope\maven\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;D:\newhope\maven\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;D:\newhope\maven\repository\junit\junit\4.12\junit-4.12.jar;D:\newhope\maven\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar;D:\newhope\maven\repository\org\mockito\mockito-core\2.15.0\mockito-core-2.15.0.jar;D:\newhope\maven\repository\net\bytebuddy\byte-buddy\1.7.11\byte-buddy-1.7.11.jar;D:\newhope\maven\repository\net\bytebuddy\byte-buddy-agent\1.7.11\byte-buddy-agent-1.7.11.jar;D:\newhope\maven\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;D:\newhope\maven\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\newhope\maven\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;D:\newhope\maven\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;D:\newhope\maven\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\newhope\maven\repository\org\springframework\spring-core\5.0.11.RELEASE\spring-core-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-jcl\5.0.11.RELEASE\spring-jcl-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-test\5.0.11.RELEASE\spring-test-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\xmlunit\xmlunit-core\2.5.1\xmlunit-core-2.5.1.jar;, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.0, user.home=C:\Users\Administrator, user.timezone=Asia/Shanghai, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=GBK, java.specification.version=1.8, java.class.path=D:\workspacemars\microcloud\microcloud-stream-provider\target\test-classes;D:\workspacemars\microcloud\microcloud-stream-provider\target\classes;D:\newhope\maven\repository\org\springframework\cloud\spring-cloud-stream\2.0.0.RELEASE\spring-cloud-stream-2.0.0.RELEASE.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-starter-validation\2.0.7.RELEASE\spring-boot-starter-validation-2.0.7.RELEASE.jar;D:\newhope\maven\repository\org\apache\tomcat\embed\tomcat-embed-el\8.5.35\tomcat-embed-el-8.5.35.jar;D:\newhope\maven\repository\org\hibernate\validator\hibernate-validator\6.0.13.Final\hibernate-validator-6.0.13.Final.jar;D:\newhope\maven\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;D:\newhope\maven\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;D:\newhope\maven\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;D:\newhope\maven\repository\org\springframework\spring-messaging\5.0.11.RELEASE\spring-messaging-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-beans\5.0.11.RELEASE\spring-beans-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\integration\spring-integration-core\5.0.10.RELEASE\spring-integration-core-5.0.10.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-aop\5.0.11.RELEASE\spring-aop-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-context\5.0.11.RELEASE\spring-context-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-expression\5.0.11.RELEASE\spring-expression-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-tx\5.0.11.RELEASE\spring-tx-5.0.11.RELEASE.jar;D:\newhope\maven\repository\io\projectreactor\reactor-core\3.1.12.RELEASE\reactor-core-3.1.12.RELEASE.jar;D:\newhope\maven\repository\org\reactivestreams\reactive-streams\1.0.2\reactive-streams-1.0.2.jar;D:\newhope\maven\repository\org\springframework\integration\spring-integration-jmx\5.0.10.RELEASE\spring-integration-jmx-5.0.10.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-tuple\1.0.0.RELEASE\spring-tuple-1.0.0.RELEASE.jar;D:\newhope\maven\repository\com\esotericsoftware\kryo-shaded\3.0.3\kryo-shaded-3.0.3.jar;D:\newhope\maven\repository\com\esotericsoftware\minlog\1.3.0\minlog-1.3.0.jar;D:\newhope\maven\repository\com\fasterxml\jackson\core\jackson-databind\2.9.7\jackson-databind-2.9.7.jar;D:\newhope\maven\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;D:\newhope\maven\repository\com\fasterxml\jackson\core\jackson-core\2.9.7\jackson-core-2.9.7.jar;D:\newhope\maven\repository\org\springframework\integration\spring-integration-tuple\1.0.0.RELEASE\spring-integration-tuple-1.0.0.RELEASE.jar;D:\newhope\maven\repository\org\springframework\retry\spring-retry\1.2.2.RELEASE\spring-retry-1.2.2.RELEASE.jar;D:\newhope\maven\repository\org\springframework\cloud\spring-cloud-starter-stream-rabbit\2.0.0.RELEASE\spring-cloud-starter-stream-rabbit-2.0.0.RELEASE.jar;D:\newhope\maven\repository\org\springframework\cloud\spring-cloud-stream-binder-rabbit\2.0.0.RELEASE\spring-cloud-stream-binder-rabbit-2.0.0.RELEASE.jar;D:\newhope\maven\repository\org\springframework\cloud\spring-cloud-stream-binder-rabbit-core\2.0.0.RELEASE\spring-cloud-stream-binder-rabbit-core-2.0.0.RELEASE.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-starter-amqp\2.0.7.RELEASE\spring-boot-starter-amqp-2.0.7.RELEASE.jar;D:\newhope\maven\repository\org\springframework\amqp\spring-rabbit\2.0.10.RELEASE\spring-rabbit-2.0.10.RELEASE.jar;D:\newhope\maven\repository\org\springframework\amqp\spring-amqp\2.0.10.RELEASE\spring-amqp-2.0.10.RELEASE.jar;D:\newhope\maven\repository\com\rabbitmq\amqp-client\5.4.3\amqp-client-5.4.3.jar;D:\newhope\maven\repository\org\springframework\spring-web\5.0.11.RELEASE\spring-web-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\integration\spring-integration-amqp\5.0.10.RELEASE\spring-integration-amqp-5.0.10.RELEASE.jar;D:\workspacemars\microcloud\microcloud-api\target\microcloud.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-starter-test\2.0.7.RELEASE\spring-boot-starter-test-2.0.7.RELEASE.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-starter\2.0.7.RELEASE\spring-boot-starter-2.0.7.RELEASE.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot\2.0.7.RELEASE\spring-boot-2.0.7.RELEASE.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.7.RELEASE\spring-boot-autoconfigure-2.0.7.RELEASE.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-starter-logging\2.0.7.RELEASE\spring-boot-starter-logging-2.0.7.RELEASE.jar;D:\newhope\maven\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;D:\newhope\maven\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;D:\newhope\maven\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;D:\newhope\maven\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;D:\newhope\maven\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;D:\newhope\maven\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;D:\newhope\maven\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-test\2.0.7.RELEASE\spring-boot-test-2.0.7.RELEASE.jar;D:\newhope\maven\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.0.7.RELEASE\spring-boot-test-autoconfigure-2.0.7.RELEASE.jar;D:\newhope\maven\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;D:\newhope\maven\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;D:\newhope\maven\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;D:\newhope\maven\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;D:\newhope\maven\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;D:\newhope\maven\repository\junit\junit\4.12\junit-4.12.jar;D:\newhope\maven\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar;D:\newhope\maven\repository\org\mockito\mockito-core\2.15.0\mockito-core-2.15.0.jar;D:\newhope\maven\repository\net\bytebuddy\byte-buddy\1.7.11\byte-buddy-1.7.11.jar;D:\newhope\maven\repository\net\bytebuddy\byte-buddy-agent\1.7.11\byte-buddy-agent-1.7.11.jar;D:\newhope\maven\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;D:\newhope\maven\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\newhope\maven\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;D:\newhope\maven\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;D:\newhope\maven\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\newhope\maven\repository\org\springframework\spring-core\5.0.11.RELEASE\spring-core-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-jcl\5.0.11.RELEASE\spring-jcl-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\springframework\spring-test\5.0.11.RELEASE\spring-test-5.0.11.RELEASE.jar;D:\newhope\maven\repository\org\xmlunit\xmlunit-core\2.5.1\xmlunit-core-2.5.1.jar;, user.name=Administrator, java.vm.specification.version=1.8, sun.java.command=D:\workspacemars\microcloud\microcloud-stream-provider\target\surefire\surefirebooter2695987348872540877.jar D:\workspacemars\microcloud\microcloud-stream-provider\target\surefire\surefire7099587308813368257tmp D:\workspacemars\microcloud\microcloud-stream-provider\target\surefire\surefire8344262467687974055tmp, java.home=D:\Program Files\Java\jdk1.8.0_101\jre, sun.arch.data.model=64, user.language=zh, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_101, java.ext.dirs=D:\Program Files\Java\jdk1.8.0_101\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=D:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;D:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;D:\Program Files\Java\jdk1.8.0_101\jre\lib\sunrsasign.jar;D:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;D:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;D:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;D:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;D:\Program Files\Java\jdk1.8.0_101\jre\classes, java.vendor=Oracle Corporation, localRepository=D:\newhope\maven\repository, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=amd64}}, SystemEnvironmentPropertySource@1010953501 {name=&apos;systemEnvironment&apos;, properties={PATH=D:/Program Files/Java/jdk1.8.0_101/jre/bin/server;D:/Program Files/Java/jdk1.8.0_101/jre/bin;D:/Program Files/Java/jdk1.8.0_101/jre/lib/amd64;D:\Program Files\Java\jdk1.8.0_101\jre\bin;D:\Program Files\Java\jdk1.8.0_101\bin;D:\newhope\software\mysql-5.6.26-winx64\bin;D:\newhope\apache-maven-3.6.1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;d:\Program Files\OpenVPN\bin;D:\newhope\erl9.3\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\newhope\software\eclipsemars\eclipse;, USERDOMAIN_ROAMINGPROFILE=PC201904160834, LOCALAPPDATA=C:\Users\Administrator\AppData\Local, PROCESSOR_LEVEL=6, SYSTEMDRIVE=C:, COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, USERDOMAIN=PC201904160834, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\PC201904160834, JAVA_HOME=D:\Program Files\Java\jdk1.8.0_101, PROMPT=$P$G, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROGRAMFILES(X86)=C:\Program Files (x86), PROCESSOR_ARCHITECTURE=AMD64, DRIVERDATA=C:\Windows\System32\Drivers\DriverData, ERLANG_HOME=D:\newhope\erl9.3, KAFKA_BOOTSTRAP_SERVERS=172.16.10.214:9092, MAVEN_HOME=D:\newhope\apache-maven-3.6.1, PROGRAMFILES=C:\Program Files, APPDATA=C:\Users\Administrator\AppData\Roaming, PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, ALIYUN_PROJECTNAME=feedmalltest, PROGRAMW6432=C:\Program Files, PROGRAMDATA=C:\ProgramData, SYSTEMROOT=C:\Windows, USERNAME=Administrator, FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, OS=Windows_NT, COMMONPROGRAMW6432=C:\Program Files\Common Files, COMPUTERNAME=PC201904160834, COMMONPROGRAMFILES=C:\Program Files\Common Files, COMSPEC=C:\Windows\system32\cmd.exe, PROCESSOR_REVISION=8e0a, CLASSPATH=.;D:\Program Files\Java\jdk1.8.0_101\lib;D:\Program Files\Java\jdk1.8.0_101lib\tools.jar, WINDIR=C:\Windows, =D:=D:\workspacemars\microcloud\microcloud-stream-provider, HOMEPATH=\Users\Administrator, TEMP=C:\Users\ADMINI~1\AppData\Local\Temp, MYSQL_HOME=D:\newhope\software\mysql-5.6.26-winx64, HOMEDRIVE=C:, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 10, GenuineIntel, USERPROFILE=C:\Users\Administrator, TMP=C:\Users\ADMINI~1\AppData\Local\Temp, PUBLIC=C:\Users\Public, NUMBER_OF_PROCESSORS=8, =::=::\}}]
+11:43:17.867 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+11:43:17.868 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource &apos;Inlined Test Properties&apos; with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___&apos;_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | &apos;_ | &apos;_| | &apos;_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  &apos;  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.7.RELEASE)
+
+2019-08-16 11:43:18.280  INFO 10784 --- [           main] cn.enjoy.test.TestMessageProvider        : Starting TestMessageProvider on PC201904160834 with PID 10784 (started by Administrator in D:\workspacemars\microcloud\microcloud-stream-provider)
+2019-08-16 11:43:18.282  INFO 10784 --- [           main] cn.enjoy.test.TestMessageProvider        : No active profile set, falling back to default profiles: default
+2019-08-16 11:43:18.303  INFO 10784 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@72c8e7b: startup date [Fri Aug 16 11:43:18 CST 2019]; root of context hierarchy
+2019-08-16 11:43:18.810  INFO 10784 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named &apos;integrationHeaderChannelRegistry&apos; has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2019-08-16 11:43:19.069  INFO 10784 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named &apos;errorChannel&apos; has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2019-08-16 11:43:19.076  INFO 10784 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named &apos;taskScheduler&apos; has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2019-08-16 11:43:19.128  INFO 10784 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean &apos;org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration&apos; of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$f45984b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-16 11:43:19.255  INFO 10784 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean &apos;org.springframework.integration.config.IntegrationManagementConfiguration&apos; of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$98df81b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-16 11:43:20.641  INFO 10784 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService &apos;taskScheduler&apos;
+2019-08-16 11:43:20.914  INFO 10784 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-08-16 11:43:20.915  INFO 10784 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the &apos;errorChannel&apos; channel
+2019-08-16 11:43:20.915  INFO 10784 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel &apos;microcloud-stream-provider.errorChannel&apos; has 1 subscriber(s).
+2019-08-16 11:43:20.915  INFO 10784 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2019-08-16 11:43:20.915  INFO 10784 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-08-16 11:43:20.929  INFO 10784 --- [           main] cn.enjoy.test.TestMessageProvider        : Started TestMessageProvider in 3.059 seconds (JVM running for 3.856)
+2019-08-16 11:43:20.980 ERROR 10784 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5876a9af] to prepare test instance [cn.enjoy.test.TestMessageProvider@1bd4fdd]
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;cn.enjoy.test.TestMessageProvider&apos;: Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;cn.enjoy.service.IMessageProvider&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321) ~[spring-context-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:393) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53) [surefire-junit4-2.10.jar:2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123) [surefire-junit4-2.10.jar:2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104) [surefire-junit4-2.10.jar:2.10]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_101]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164) [surefire-api-2.10.jar:2.10]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110) [surefire-booter-2.10.jar:2.10]
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175) [surefire-booter-2.10.jar:2.10]
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107) [surefire-booter-2.10.jar:2.10]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68) [surefire-booter-2.10.jar:2.10]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;cn.enjoy.service.IMessageProvider&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1506) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:507) ~[spring-context-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.11.RELEASE.jar:5.0.11.RELEASE]
+	... 33 common frames omitted
+
+</system-out>
+    <system-err>
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   CodecsAutoConfiguration matched:
+      - @ConditionalOnClass found required class &apos;org.springframework.http.codec.CodecConfigurer&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   CodecsAutoConfiguration.JacksonCodecConfiguration matched:
+      - @ConditionalOnClass found required class &apos;com.fasterxml.jackson.databind.ObjectMapper&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   CodecsAutoConfiguration.JacksonCodecConfiguration#jacksonCodecCustomizer matched:
+      - @ConditionalOnBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) found bean &apos;jacksonObjectMapper&apos; (OnBeanCondition)
+
+   GenericCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
+
+   HttpMessageConvertersAutoConfiguration matched:
+      - @ConditionalOnClass found required class &apos;org.springframework.http.converter.HttpMessageConverter&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   HttpMessageConvertersAutoConfiguration#messageConverters matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.http.HttpMessageConverters; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required class &apos;org.springframework.http.converter.StringHttpMessageConverter&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration#stringHttpMessageConverter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.StringHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   IntegrationAutoConfiguration matched:
+      - @ConditionalOnClass found required class &apos;org.springframework.integration.config.EnableIntegration&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   IntegrationAutoConfiguration.IntegrationComponentScanConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.integration.gateway.GatewayProxyFactoryBean; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   IntegrationAutoConfiguration.IntegrationManagementConfiguration matched:
+      - @ConditionalOnClass found required class &apos;org.springframework.integration.config.EnableIntegrationManagement&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+      - @ConditionalOnMissingBean (names: integrationManagementConfigurer; types: org.springframework.integration.support.management.IntegrationManagementConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration matched:
+      - @ConditionalOnClass found required class &apos;com.fasterxml.jackson.databind.ObjectMapper&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration matched:
+      - @ConditionalOnClass found required class &apos;org.springframework.http.converter.json.Jackson2ObjectMapperBuilder&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration matched:
+      - @ConditionalOnClass found required class &apos;org.springframework.http.converter.json.Jackson2ObjectMapperBuilder&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration#jacksonObjectMapperBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.Jackson2ObjectMapperBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration matched:
+      - @ConditionalOnClass found required class &apos;org.springframework.http.converter.json.Jackson2ObjectMapperBuilder&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration#jacksonObjectMapper matched:
+      - @ConditionalOnMissingBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required class &apos;com.fasterxml.jackson.databind.ObjectMapper&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+      - @ConditionalOnProperty (spring.http.converters.preferred-json-mapper=jackson) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) found bean &apos;jacksonObjectMapper&apos; (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration#mappingJackson2HttpMessageConverter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.MappingJackson2HttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   NoOpCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration matched:
+      - @ConditionalOnClass found required class &apos;org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration#persistenceExceptionTranslationPostProcessor matched:
+      - @ConditionalOnProperty (spring.dao.exceptiontranslation.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   RabbitAnnotationDrivenConfiguration matched:
+      - @ConditionalOnClass found required class &apos;org.springframework.amqp.rabbit.annotation.EnableRabbit&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   RabbitAnnotationDrivenConfiguration#directRabbitListenerContainerFactoryConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.amqp.DirectRabbitListenerContainerFactoryConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RabbitAnnotationDrivenConfiguration#simpleRabbitListenerContainerFactory matched:
+      - @ConditionalOnProperty (spring.rabbitmq.listener.type=simple) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (names: rabbitListenerContainerFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RabbitAnnotationDrivenConfiguration#simpleRabbitListenerContainerFactoryConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.amqp.SimpleRabbitListenerContainerFactoryConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RabbitAnnotationDrivenConfiguration.EnableRabbitConfiguration matched:
+      - @ConditionalOnMissingBean (names: org.springframework.amqp.rabbit.config.internalRabbitListenerAnnotationProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RabbitAutoConfiguration matched:
+      - @ConditionalOnClass found required classes &apos;org.springframework.amqp.rabbit.core.RabbitTemplate&apos;, &apos;com.rabbitmq.client.Channel&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   RabbitAutoConfiguration.MessagingTemplateConfiguration matched:
+      - @ConditionalOnClass found required class &apos;org.springframework.amqp.rabbit.core.RabbitMessagingTemplate&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.amqp.rabbit.core.RabbitMessagingTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RabbitAutoConfiguration.MessagingTemplateConfiguration#rabbitMessagingTemplate matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.amqp.rabbit.core.RabbitTemplate; SearchStrategy: all) found a primary bean from beans &apos;rabbitTemplate&apos; (OnBeanCondition)
+
+   RabbitAutoConfiguration.RabbitConnectionFactoryCreator matched:
+      - @ConditionalOnMissingBean (types: org.springframework.amqp.rabbit.connection.ConnectionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RabbitAutoConfiguration.RabbitTemplateConfiguration#amqpAdmin matched:
+      - @ConditionalOnProperty (spring.rabbitmq.dynamic) matched (OnPropertyCondition)
+      - @ConditionalOnSingleCandidate (types: org.springframework.amqp.rabbit.connection.ConnectionFactory; SearchStrategy: all) found a primary bean from beans &apos;rabbitConnectionFactory&apos;; @ConditionalOnMissingBean (types: org.springframework.amqp.core.AmqpAdmin; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RabbitAutoConfiguration.RabbitTemplateConfiguration#rabbitTemplate matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.amqp.rabbit.connection.ConnectionFactory; SearchStrategy: all) found a primary bean from beans &apos;rabbitConnectionFactory&apos;; @ConditionalOnMissingBean (types: org.springframework.amqp.rabbit.core.RabbitTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ReactorCoreAutoConfiguration matched:
+      - @ConditionalOnClass found required classes &apos;reactor.core.publisher.Mono&apos;, &apos;reactor.core.publisher.Flux&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   RestTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required class &apos;org.springframework.web.client.RestTemplate&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   RestTemplateAutoConfiguration#restTemplateBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.client.RestTemplateBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SimpleCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration automatic cache type (CacheCondition)
+
+   TransactionAutoConfiguration matched:
+      - @ConditionalOnClass found required class &apos;org.springframework.transaction.PlatformTransactionManager&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   TransactionAutoConfiguration#platformTransactionManagerCustomizers matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ValidationAutoConfiguration matched:
+      - @ConditionalOnClass found required class &apos;javax.validation.executable.ExecutableValidator&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+      - @ConditionalOnResource found location classpath:META-INF/services/javax.validation.spi.ValidationProvider (OnResourceCondition)
+
+   ValidationAutoConfiguration#defaultValidator matched:
+      - @ConditionalOnMissingBean (types: javax.validation.Validator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ValidationAutoConfiguration#methodValidationPostProcessor matched:
+      - @ConditionalOnMissingBean (types: org.springframework.validation.beanvalidation.MethodValidationPostProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   ActiveMQAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;javax.jms.ConnectionFactory&apos;, &apos;org.apache.activemq.ActiveMQConnectionFactory&apos; (OnClassCondition)
+
+   AopAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.aspectj.lang.annotation.Aspect&apos;, &apos;org.aspectj.lang.reflect.Advice&apos;, &apos;org.aspectj.weaver.AnnotatedElement&apos; (OnClassCondition)
+
+   ArtemisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;javax.jms.ConnectionFactory&apos;, &apos;org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory&apos; (OnClassCondition)
+
+   BatchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.springframework.batch.core.launch.JobLauncher&apos;, &apos;org.springframework.jdbc.core.JdbcOperations&apos; (OnClassCondition)
+
+   BindersHealthIndicatorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.boot.actuate.health.HealthIndicator&apos; (OnClassCondition)
+
+   BindingsEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.boot.actuate.endpoint.annotation.Endpoint&apos; (OnClassCondition)
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cache.interceptor.CacheAspectSupport; SearchStrategy: all) did not find any beans of type org.springframework.cache.interceptor.CacheAspectSupport (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class &apos;org.springframework.cache.CacheManager&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   CacheAutoConfiguration.CacheManagerJpaDependencyConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean&apos; (OnClassCondition)
+         - Ancestor org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   CaffeineCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.github.benmanes.caffeine.cache.Caffeine&apos;, &apos;org.springframework.cache.caffeine.CaffeineCacheManager&apos; (OnClassCondition)
+
+   CassandraAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;com.datastax.driver.core.Cluster&apos; (OnClassCondition)
+
+   CassandraDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.datastax.driver.core.Cluster&apos;, &apos;org.springframework.data.cassandra.core.CassandraAdminOperations&apos; (OnClassCondition)
+
+   CassandraReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.datastax.driver.core.Cluster&apos;, &apos;org.springframework.data.cassandra.core.ReactiveCassandraTemplate&apos; (OnClassCondition)
+
+   CassandraReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.springframework.data.cassandra.ReactiveSession&apos;, &apos;org.springframework.data.cassandra.repository.ReactiveCassandraRepository&apos; (OnClassCondition)
+
+   CassandraRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.datastax.driver.core.Session&apos;, &apos;org.springframework.data.cassandra.repository.CassandraRepository&apos; (OnClassCondition)
+
+   ChannelBindingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cloud.stream.binding.BindingService; SearchStrategy: all) did not find any beans of type org.springframework.cloud.stream.binding.BindingService (OnBeanCondition)
+
+   ChannelsEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.boot.actuate.endpoint.annotation.Endpoint&apos; (OnClassCondition)
+
+   CloudAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.cloud.config.java.CloudScanConfiguration&apos; (OnClassCondition)
+
+   CouchbaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.couchbase.client.java.CouchbaseBucket&apos;, &apos;com.couchbase.client.java.Cluster&apos; (OnClassCondition)
+
+   CouchbaseCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.couchbase.client.java.Bucket&apos;, &apos;com.couchbase.client.spring.cache.CouchbaseCacheManager&apos; (OnClassCondition)
+
+   CouchbaseDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.couchbase.client.java.Bucket&apos;, &apos;org.springframework.data.couchbase.repository.CouchbaseRepository&apos; (OnClassCondition)
+
+   CouchbaseReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.couchbase.client.java.Bucket&apos;, &apos;org.springframework.data.couchbase.repository.ReactiveCouchbaseRepository&apos; (OnClassCondition)
+
+   CouchbaseReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.couchbase.client.java.Bucket&apos;, &apos;org.springframework.data.couchbase.repository.ReactiveCouchbaseRepository&apos; (OnClassCondition)
+
+   CouchbaseRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.couchbase.client.java.Bucket&apos;, &apos;org.springframework.data.couchbase.repository.CouchbaseRepository&apos; (OnClassCondition)
+
+   DataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType&apos; (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.jdbc.core.JdbcTemplate&apos; (OnClassCondition)
+
+   DispatcherServletAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.web.servlet.DispatcherServlet&apos; (OnClassCondition)
+
+   EhCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;net.sf.ehcache.Cache&apos;, &apos;org.springframework.cache.ehcache.EhCacheCacheManager&apos; (OnClassCondition)
+
+   ElasticsearchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.elasticsearch.client.Client&apos;, &apos;org.springframework.data.elasticsearch.client.TransportClientFactoryBean&apos; (OnClassCondition)
+
+   ElasticsearchDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.elasticsearch.client.Client&apos;, &apos;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&apos; (OnClassCondition)
+
+   ElasticsearchRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.elasticsearch.client.Client&apos;, &apos;org.springframework.data.elasticsearch.repository.ElasticsearchRepository&apos; (OnClassCondition)
+
+   EmbeddedLdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;com.unboundid.ldap.listener.InMemoryDirectoryServer&apos; (OnClassCondition)
+
+   EmbeddedMongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.mongodb.MongoClient&apos;, &apos;de.flapdoodle.embed.mongo.MongodStarter&apos; (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication (required) not a servlet web application and not a reactive web application (OnWebApplicationCondition)
+
+   ErrorMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;javax.servlet.Servlet&apos;, &apos;org.springframework.web.servlet.DispatcherServlet&apos; (OnClassCondition)
+
+   ErrorWebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.web.reactive.config.WebFluxConfigurer&apos; (OnClassCondition)
+
+   FlywayAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.flywaydb.core.Flyway&apos; (OnClassCondition)
+
+   FreeMarkerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;freemarker.template.Configuration&apos;, &apos;org.springframework.ui.freemarker.FreeMarkerConfigurationFactory&apos; (OnClassCondition)
+
+   GroovyTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;groovy.text.markup.MarkupTemplateEngine&apos; (OnClassCondition)
+
+   GsonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;com.google.gson.Gson&apos; (OnClassCondition)
+
+   GsonHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;com.google.gson.Gson&apos; (OnClassCondition)
+
+   H2ConsoleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.h2.server.web.WebServlet&apos; (OnClassCondition)
+
+   HazelcastAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;com.hazelcast.core.HazelcastInstance&apos; (OnClassCondition)
+
+   HazelcastCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.hazelcast.core.HazelcastInstance&apos;, &apos;com.hazelcast.spring.cache.HazelcastCacheManager&apos; (OnClassCondition)
+
+   HazelcastJpaDependencyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.hazelcast.core.HazelcastInstance&apos;, &apos;org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean&apos; (OnClassCondition)
+
+   HibernateJpaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean&apos;, &apos;javax.persistence.EntityManager&apos; (OnClassCondition)
+
+   HttpEncodingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.web.filter.CharacterEncodingFilter&apos; (OnClassCondition)
+
+   HttpHandlerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.web.reactive.DispatcherHandler&apos; (OnClassCondition)
+
+   HypermediaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.springframework.hateoas.Resource&apos;, &apos;org.springframework.plugin.core.Plugin&apos; (OnClassCondition)
+
+   InfinispanCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.infinispan.spring.provider.SpringEmbeddedCacheManager&apos; (OnClassCondition)
+
+   InfluxDbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.influxdb.InfluxDB&apos; (OnClassCondition)
+
+   IntegrationAutoConfiguration.IntegrationJdbcConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.integration.jdbc.store.JdbcMessageStore&apos; (OnClassCondition)
+
+   IntegrationAutoConfiguration.IntegrationJmxConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.jmx.enabled=true) found different value in property &apos;enabled&apos; (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class &apos;org.springframework.integration.jmx.config.EnableIntegrationMBeanExport&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   JCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;javax.cache.Caching&apos;, &apos;org.springframework.cache.jcache.JCacheCacheManager&apos; (OnClassCondition)
+
+   JacksonAutoConfiguration.JodaDateTimeJacksonConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.joda.time.DateTime&apos;, &apos;com.fasterxml.jackson.datatype.joda.ser.DateTimeSerializer&apos;, &apos;com.fasterxml.jackson.datatype.joda.cfg.JacksonJodaDateFormat&apos; (OnClassCondition)
+
+   JacksonAutoConfiguration.ParameterNamesModuleConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;com.fasterxml.jackson.module.paramnames.ParameterNamesModule&apos; (OnClassCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2XmlHttpMessageConverterConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;com.fasterxml.jackson.dataformat.xml.XmlMapper&apos; (OnClassCondition)
+
+   JdbcTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.jdbc.core.JdbcTemplate&apos; (OnClassCondition)
+
+   JerseyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.glassfish.jersey.server.spring.SpringComponentProvider&apos;, &apos;javax.servlet.ServletRegistration&apos; (OnClassCondition)
+
+   JestAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;io.searchbox.client.JestClient&apos; (OnClassCondition)
+
+   JmsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;javax.jms.Message&apos;, &apos;org.springframework.jms.core.JmsTemplate&apos; (OnClassCondition)
+
+   JmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.jmx.enabled=true) found different value in property &apos;enabled&apos; (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class &apos;org.springframework.jmx.export.MBeanExporter&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   JndiConnectionFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.jms.core.JmsTemplate&apos; (OnClassCondition)
+
+   JndiDataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType&apos; (OnClassCondition)
+
+   JooqAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.jooq.DSLContext&apos; (OnClassCondition)
+
+   JpaRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.data.jpa.repository.JpaRepository&apos; (OnClassCondition)
+
+   JsonbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;javax.json.bind.Jsonb&apos; (OnClassCondition)
+
+   JsonbHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;javax.json.bind.Jsonb&apos; (OnClassCondition)
+
+   JtaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;javax.transaction.Transaction&apos; (OnClassCondition)
+
+   KafkaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.kafka.core.KafkaTemplate&apos; (OnClassCondition)
+
+   LdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.ldap.core.ContextSource&apos; (OnClassCondition)
+
+   LdapDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.data.ldap.repository.LdapRepository&apos; (OnClassCondition)
+
+   LdapRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.data.ldap.repository.LdapRepository&apos; (OnClassCondition)
+
+   LiquibaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;liquibase.integration.spring.SpringLiquibase&apos;, &apos;liquibase.change.DatabaseChange&apos; (OnClassCondition)
+
+   MailSenderAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;javax.mail.internet.MimeMessage&apos;, &apos;org.springframework.mail.MailSender&apos; (OnClassCondition)
+
+   MailSenderValidatorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.mail.test-connection) did not find property &apos;test-connection&apos; (OnPropertyCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   MongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;com.mongodb.MongoClient&apos; (OnClassCondition)
+
+   MongoDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.mongodb.MongoClient&apos;, &apos;org.springframework.data.mongodb.core.MongoTemplate&apos; (OnClassCondition)
+
+   MongoReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;com.mongodb.reactivestreams.client.MongoClient&apos; (OnClassCondition)
+
+   MongoReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.mongodb.reactivestreams.client.MongoClient&apos;, &apos;org.springframework.data.mongodb.core.ReactiveMongoTemplate&apos; (OnClassCondition)
+
+   MongoReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.mongodb.reactivestreams.client.MongoClient&apos;, &apos;org.springframework.data.mongodb.repository.ReactiveMongoRepository&apos; (OnClassCondition)
+
+   MongoRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;com.mongodb.MongoClient&apos;, &apos;org.springframework.data.mongodb.repository.MongoRepository&apos; (OnClassCondition)
+
+   MultipartAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;javax.servlet.Servlet&apos;, &apos;javax.servlet.MultipartConfigElement&apos; (OnClassCondition)
+
+   MustacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;com.samskivert.mustache.Mustache&apos; (OnClassCondition)
+
+   Neo4jDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.neo4j.ogm.session.SessionFactory&apos;, &apos;org.springframework.data.neo4j.transaction.Neo4jTransactionManager&apos; (OnClassCondition)
+
+   Neo4jRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.neo4j.ogm.session.Neo4jSession&apos;, &apos;org.springframework.data.neo4j.repository.Neo4jRepository&apos; (OnClassCondition)
+
+   OAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.springframework.security.config.annotation.web.configuration.EnableWebSecurity&apos;, &apos;org.springframework.security.oauth2.client.registration.ClientRegistration&apos; (OnClassCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource &apos;${spring.info.build.location:classpath:META-INF/build-info.properties}&apos; (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   QuartzAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.quartz.Scheduler&apos;, &apos;org.springframework.scheduling.quartz.SchedulerFactoryBean&apos; (OnClassCondition)
+
+   RabbitAnnotationDrivenConfiguration#directRabbitListenerContainerFactory:
+      Did not match:
+         - @ConditionalOnProperty (spring.rabbitmq.listener.type=direct) did not find property &apos;type&apos; (OnPropertyCondition)
+
+   ReactiveSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity&apos;, &apos;org.springframework.security.web.server.WebFilterChainProxy&apos; (OnClassCondition)
+
+   ReactiveUserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.security.authentication.ReactiveAuthenticationManager&apos; (OnClassCondition)
+
+   ReactiveWebServerFactoryAutoConfiguration:
+      Did not match:
+         - not a reactive web application (OnWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required class &apos;org.springframework.http.ReactiveHttpInputMessage&apos;; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   RedisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.data.redis.core.RedisOperations&apos; (OnClassCondition)
+
+   RedisCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.data.redis.connection.RedisConnectionFactory&apos; (OnClassCondition)
+
+   RedisReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.springframework.data.redis.connection.ReactiveRedisConnectionFactory&apos;, &apos;org.springframework.data.redis.core.ReactiveRedisTemplate&apos; (OnClassCondition)
+
+   RedisRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.data.redis.repository.configuration.EnableRedisRepositories&apos; (OnClassCondition)
+
+   RepositoryRestMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration&apos; (OnClassCondition)
+
+   SecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.security.authentication.DefaultAuthenticationEventPublisher&apos; (OnClassCondition)
+
+   SecurityFilterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer&apos;, &apos;org.springframework.security.config.http.SessionCreationPolicy&apos; (OnClassCondition)
+
+   SecurityRequestMatcherProviderAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.security.web.util.matcher.RequestMatcher&apos; (OnClassCondition)
+
+   SendGridAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;com.sendgrid.SendGrid&apos; (OnClassCondition)
+
+   ServletWebServerFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;javax.servlet.ServletRequest&apos; (OnClassCondition)
+
+   SessionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.session.Session&apos; (OnClassCondition)
+
+   SolrAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.apache.solr.client.solrj.impl.HttpSolrClient&apos;, &apos;org.apache.solr.client.solrj.impl.CloudSolrClient&apos; (OnClassCondition)
+
+   SolrRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.apache.solr.client.solrj.SolrClient&apos;, &apos;org.springframework.data.solr.repository.SolrRepository&apos; (OnClassCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.application.admin.enabled=true) did not find property &apos;enabled&apos; (OnPropertyCondition)
+
+   SpringDataWebAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;org.springframework.data.web.PageableHandlerMethodArgumentResolver&apos;, &apos;org.springframework.web.servlet.config.annotation.WebMvcConfigurer&apos; (OnClassCondition)
+
+   ThymeleafAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.thymeleaf.templatemode.TemplateMode&apos; (OnClassCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) did not find any beans of type org.springframework.transaction.PlatformTransactionManager (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration:
+      Did not match:
+         - Ancestor org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+      Matched:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property &apos;proxy-target-class&apos; (OnPropertyCondition)
+         - Ancestor org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration:
+      Did not match:
+         - @ConditionalOnSingleCandidate (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.security.authentication.AuthenticationManager&apos; (OnClassCondition)
+
+   WebClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.web.reactive.function.client.WebClient&apos; (OnClassCondition)
+
+   WebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.web.reactive.config.WebFluxConfigurer&apos; (OnClassCondition)
+
+   WebMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;javax.servlet.Servlet&apos;, &apos;org.springframework.web.servlet.DispatcherServlet&apos;, &apos;org.springframework.web.servlet.config.annotation.WebMvcConfigurer&apos; (OnClassCondition)
+
+   WebServicesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.ws.transport.http.MessageDispatcherServlet&apos; (OnClassCondition)
+
+   WebSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class &apos;org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer&apos; (OnClassCondition)
+
+   WebSocketReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;javax.servlet.Servlet&apos;, &apos;javax.websocket.server.ServerContainer&apos; (OnClassCondition)
+
+   WebSocketServletAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;javax.servlet.Servlet&apos;, &apos;javax.websocket.server.ServerContainer&apos; (OnClassCondition)
+
+   XADataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes &apos;javax.transaction.TransactionManager&apos;, &apos;org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType&apos; (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+</system-err>
+  </testcase>
+</testsuite>
